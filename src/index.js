@@ -1,5 +1,4 @@
 import { data } from "./data.js";
-import refs from "./refs.js";
 
 const list = document.querySelector(".list");
 

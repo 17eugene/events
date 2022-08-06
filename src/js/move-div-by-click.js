@@ -1,4 +1,4 @@
-import refs from "./refs.js";
+import refs from "./refs/refs.js";
 
 refs.inner.addEventListener("click", onInnerClick);
 refs.stopBtn.addEventListener("click", onBtnClick);

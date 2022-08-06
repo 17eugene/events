@@ -1,4 +1,4 @@
-import refs from "./refs.js";
+import refs from "./refs/refs.js";
 
 document.addEventListener("DOMContentLoaded", ready);
 refs.toggleLink.addEventListener("click", onToggleLink);

@@ -1,4 +1,4 @@
-import refs from "./refs.js";
+import refs from "./refs/refs.js";
 
 refs.navigation.addEventListener("click", onNavLink);
 
@@ -13,7 +13,7 @@ function onNavLink(e) {
 
   if (e.target.innerText === "ADDITIONAL") {
     refs.additionalSection.scrollIntoView({
-      block: "center",
+      block: "start",
       behavior: "smooth",
     });
   }

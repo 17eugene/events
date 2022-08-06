@@ -1,4 +1,4 @@
-import refs from "./refs.js";
+import refs from "./refs/refs.js";
 
 const footerText = refs.footer.children[0];
 footerText.textContent = getBrowser();

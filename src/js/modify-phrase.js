@@ -1,4 +1,4 @@
-import refs from "./refs.js";
+import refs from "./refs/refs.js";
 
 refs.phraseInput.addEventListener("change", phrase);
 refs.submitPhrase.addEventListener("submit", generateListFromPhrase);

@@ -1,4 +1,4 @@
-import refs from "./refs.js";
+import refs from "./refs/refs.js";
 
 let timeWithoutActivity = 300000;
 let timeoutToClose = 30000;
