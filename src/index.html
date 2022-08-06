@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">LOGO</div>
+
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">Cards</li>
+              <li class="navigation__item">Form</li>
+              <li class="navigation__item">additional</li>
+            </ul>
+          </nav>
+
+          <!-- theme toggle -->
+          <div class="toggler-container">
+            <label class="theme-toggler__label" for="theme-toggler__input">
+              <input
+                type="checkbox"
+                id="theme-toggler__input"
+                aria-label="Switch between dark and lighy themes"
+                name="theme"
+              />
+              <span></span>
+              <i class="indicator"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="progress"></div>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title cards-title">Auto cards section</h2>
+
+          <!---------------------- вставляем коллекцию карточек в данный список ----------------------->
+          <ul class="list"></ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="form-container">
+            <form class="form">
+              <fieldset class="form__body">
+                <legend class="form__title title">Registration</legend>
+
+                <label class="form__label" data-source="label">
+                  <span>Username</span>
+                  <input
+                    name="username"
+                    class="form__input"
+                    data-source="input"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Enter username..."
+                  />
+                </label>
+                <span class="error-message">Error message</span>
+
+                <label class="form__label" data-source="label">
+                  <span>E-mail</span>
+                  <input
+                    name="email"
+                    class="form__input"
+                    data-source="input"
+                    type="email"
+                    autocomplete="off"
+                    placeholder="Enter email address..."
+                  />
+                </label>
+                <span class="error-message">Error message</span>
+
+                <label class="form__label" data-source="label">
+                  <span>Password</span>
+                  <input
+                    min="4"
+                    max="16"
+                    name="password"
+                    class="form__input"
+                    data-source="input"
+                    type="password"
+                    autocomplete="off"
+                    placeholder="Enter password..."
+                  />
+                </label>
+                <span class="error-message">Error message</span>
+
+                <button class="form__btn" type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title additional-title">
+            Additional tasks section
+          </h2>
+          <h3 class="task-title">01. move DIV by click</h3>
+
+          <div class="wrapper">
+            <div class="inner"></div>
+            <button class="stop">Stop</button>
+          </div>
+
+          <h3 class="task-title">02. hidden while loading</h3>
+          <div class="wrapper main">
+            <a href="*" class="toggle-link">Click to hide</a>
+            <div class="outer"></div>
+          </div>
+
+          <h3 class="task-title">03. day number</h3>
+          <div class="wrapper main">
+            <input class="date" type="date" />
+            <div class="day-result">
+              Day number: <span class="day-number"></span>
+            </div>
+          </div>
+
+          <h3 class="task-title">04. modify phrase</h3>
+          <div class="wrapper">
+            <div class="phrase-wrapper">
+              <input class="phrase" type="text" placeholder="Type your phrase here" />
+              <button class="phrase-submit" type="submit">Submit</button>
+            </div>
+
+            <div class="result">
+              <span class="phrase-list-name">Phrase:</span>
+              <ul class="phrase-list"></ul>
+            </div>
+            "A": <span class="quantity">0</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="overlay">
+        <div class="notification">
+          Ви ще тут?
+          <p>
+            У разі віднустності активності сторінка закриється через
+            <span class="timeout"></span> секунд
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Footer content</p>
+    </footer>
+
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/progress-bar.js" type="module"></script>
+    <script src="./js/form-validate.js" type="module"></script>
+    <script src="./js/theme-toggle.js" type="module"></script>
+    <script src="./js/activity.js" type="module"></script>
+    <script src="./js/browser-version.js" type="module"></script>
+    <script src="./js/smooth-scroll.js" type="module"></script>
+    <!-- <script src="./js/disallow-viewing-page.js" type="module"></script> -->
+    <script src="./js/move-div-by-click.js" type="module"></script>
+    <script src="./js/hidden-while-loading.js" type="module"></script>
+    <script src="./js/date.js" type="module"></script>
+    <script src="./js/modify-phrase.js" type="module"></script>
+  </body>
+</html>
